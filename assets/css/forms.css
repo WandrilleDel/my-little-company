@@ -1,0 +1,13 @@
+/**
+*forms.css
+*   specific design for forms
+**/
+
+form div.hidden{
+    display: none;
+}
+form div.bad-control{
+    color: red;
+    font-size: .8em;
+    letter-spacing: .2em;
+}

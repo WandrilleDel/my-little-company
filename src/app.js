@@ -39,5 +39,21 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
 
             }
         )
+        //blur event handler : fired when the focus is lost from a field
+        $('[required]').on(
+            'blur',
+            (event) => {
+                console.log('Focus was lost on a required field... but which?')
+                const value = $(event.target).val()
+                if (value == ''){
+                    //how do i remove a class on the next div?
+                    $(event.target).next('div').removeClass('hidden')
+                }else{
+                    //how do i add a class on the next div?
+                    $(event.target).next('div').addClass('hidden')
+                }
+            }
+        )
     }
 )
+
