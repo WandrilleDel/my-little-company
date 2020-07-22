@@ -30,7 +30,10 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
                     }
                     if (isValid == true) {
                         $('#btn-success').removeAttr('disabled');//permet d'activer ou desactiver le boutton envoyer
-                    } else {
+                        //}if(isValid==false){
+                        //$(event.target).next('div').addClass('hidden');//enleve "lechamp est obligatoire" si il est rempli : mauvaise maniere!!
+                    }
+                    else {
                         $('#btn-success').attr('disabled', 'disabled');
                     }
                 })
@@ -45,15 +48,53 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
             (event) => {
                 console.log('Focus was lost on a required field... but which?')
                 const value = $(event.target).val()
-                if (value == ''){
+                if (value == '') {
                     //how do i remove a class on the next div?
                     $(event.target).next('div').removeClass('hidden')
-                }else{
+                } else {
                     //how do i add a class on the next div?
                     $(event.target).next('div').addClass('hidden')
                 }
             }
         )
+        $('[required]').on(//permet d'enlever le message "le champ est obligatoire" quand on click dans le champs
+            'focus',
+            (event) => {
+                let nextDiv = null;
+                nextDiv = $(event.target).next('div')
+                console.log('well i got the focus')
+                if (!nextDiv.hasClass('hidden')) {
+                    nextDiv.addClass('hidden')
+                }
+
+            }
+        )
+        //manage form submit
+        $('form#contact-form').on(
+            'submit',
+            (event) => {
+                console.log('form was submit')
+                event.preventDefault()//empeche le declenchement de l'evennement par defaut
+
+                //Récupérer les données du template
+                const snackbar = $('#snackbar').contents().clone()
+
+                //ajouter les éléments du snackbar au contenu visible courant
+                $('body').append(snackbar)
+
+                //laisser vivant 3s et supprimer le clone
+                setTimeout(
+                    () => {
+                        snackbar.remove()
+                    },
+                    3000 //3s
+                )
+            }
+        )
+
+
     }
 )
+
+
 

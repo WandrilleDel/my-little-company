@@ -1,0 +1,17 @@
+/***
+*snackbar.css
+*    styles for snackbar components
+*/
+.snackbar{
+    position: relative;
+    bottom: 5em;
+    margin: 0 auto;
+    width: 20em;
+    height: 5em;
+    padding: 1em;
+    border-radius: .5em;
+    border: solid 1px #000;
+    box-shadow: #000 .5em .5em .3em;
+    background-color:rgb(109, 109, 245);
+    color: #fff;
+}
