@@ -12,6 +12,8 @@
         <!-- Lier une feuille de style -->
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet">
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./src/app.js"></script>
     </head>
 
     <body><!-- Contenu visible du document -->
@@ -105,7 +107,7 @@
 
                 <aside>
                     <!-- Formulaire de contact -->
-                    <form method="get" action="">
+                    <form method="get" action="" id="contact-form">
                         <fieldset>
                             <legend>Qui êtes-vous...</legend>
                             <div class="form-group">
@@ -195,7 +197,7 @@
                                 </select>
                             </div>
                         </fieldset>
-                        <button class="btn btn-outline-success" disabled>
+                        <button class="btn btn-outline-success" id="btn-success" disabled>
                             Envoyer
                         </button>
                     </form>
