@@ -91,7 +91,18 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
                 )
             }
         )
-
+      $('.btn-close').on(
+        'click',
+        (event)=>{
+            $('.outer-modal').addClass('hidden')
+        }
+      )
+      $('.btn-question').on(
+        'click',
+        (event)=>{
+            $('.outer-modal').removeClass('hidden')
+        }
+      )
     }
 )
 

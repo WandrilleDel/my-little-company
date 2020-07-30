@@ -6,6 +6,9 @@
 form div.hidden{
     display: none;
 }
+.outer-modal.hidden{
+    display: none;
+}
 form div.bad-control{
     color: red;
     font-size: .8em;
