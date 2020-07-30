@@ -29,7 +29,7 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
                         isValid = false
                     }
                     if (isValid == true) {
-                        $('#btn-success').removeAttr('disabled');//permet d'activer ou desactiver le boutton envoyer
+                        $('#btn-success').removeAttr('disabled');//permet d'activer ou desactiver le boutton envoyer 
                         //}if(isValid==false){
                         //$(event.target).next('div').addClass('hidden');//enleve "lechamp est obligatoire" si il est rempli : mauvaise maniere!!
                     }
@@ -75,7 +75,7 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
             (event) => {
                 console.log('form was submit')
                 event.preventDefault()//empeche le declenchement de l'evennement par defaut
-
+                $('#btn-success').attr('disabled', 'disabled');
                 //Récupérer les données du template
                 const snackbar = $('#snackbar').contents().clone()
 
@@ -91,7 +91,6 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
                 )
             }
         )
-
 
     }
 )
