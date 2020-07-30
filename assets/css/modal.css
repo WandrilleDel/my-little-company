@@ -1,0 +1,51 @@
+/**
+*modal.css
+*version 1.0.0
+* some styles to handle modal boxes*/
+
+/**
+* outer-modal:
+*   -position: fixed
+*   -height, width : 100%
+*   -top, left : 0
+*   -backgroud with transparency
+**/
+
+.outer-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128,128,128,.5);
+}
+.inner-modal{
+    position: relative;
+    border: solid 1px rgb(128,128,128);
+    border-bottom-left-radius: 1em;
+    background-color: rgb(250,250,250);
+    height: 60%;
+    width: 50%;
+    top:50%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    overflow-y: scroll;
+}
+.inside-inner{
+    position: absolute;
+    background-color: rgb(230, 75, 75);
+    height: 2em;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom:41.4%;
+    
+}
+span.btn-close{
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: middle;
+    left: 95%;
+    font-size: 1.5em;
+}

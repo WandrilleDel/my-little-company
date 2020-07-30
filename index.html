@@ -1,257 +1,280 @@
 <!doctype html>
-<html><!-- Element racine du document -->
-    <head><!-- Fournit des informations au navigateur -->
-        <meta charset="utf-8"><!-- Balise orpheline -->
-        <meta 
-            name="viewport"
-            content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
-        >
+<html>
+<!-- Element racine du document -->
 
-        <title>My Little Company</title>
+<head>
+    <!-- Fournit des informations au navigateur -->
+    <meta charset="utf-8"><!-- Balise orpheline -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-        <!-- Lier une feuille de style -->
-        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="./assets/css/styles.css" rel="stylesheet">
-        <link  href="./assets/css/forms.css" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/snackbar.css">
-        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="./src/app.js"></script>
-    </head>
+    <title>My Little Company</title>
 
-    <body><!-- Contenu visible du document -->
-        <div id="page-container" class="container">
-            <header class="row">
-                <div class="logo col-12 col-md-2">
-                    <a href="#" title="Accueil My Little Company">
-                        <img src="assets/images/logo.png" class="img-fluid" alt="Logo CODEV">
-                    </a>
-                </div>
-                
-                <!-- h1 : heading level 1-->
-               <h1 class="col-12 col-md-10">My Little Company - Société de Services</h1>
+    <!-- Lier une feuille de style -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="./assets/css/forms.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/snackbar.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./src/app.js"></script>
+</head>
 
-                <p class="col-12"><!-- Paragraphe de contenu -->
-                    <strong>My Little Company</strong>
-                    est une <em>société de services du Numérique</em>, ....
-                </p>
+<body>
+    <!-- Contenu visible du document -->
+    <div id="page-container" class="container">
+        <header class="row">
+            <div class="logo col-12 col-md-2">
+                <a href="#" title="Accueil My Little Company">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="Logo CODEV">
+                </a>
+            </div>
 
-                <!-- Navigation dans nos pages et / ou différentes sections du document courant -->
-                <nav class="col-12">
-                    <ul><!-- Collection de lignes i.e. conteneur de lignes -->
-                        <li>
-                            <a class="nav-link uppercase hovered" href="#" title="Retour à la page d'accueil">Accueil</a>
-                        </li>
-                        <li>
-                            <a class="nav-link uppercase hovered" href="#development" title="Développement d'application">Développement</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <!-- Contenu principal d'un document -->
-            <main>
-                <section class="row">
-                    <article id="development" class="col-12 col-md-4">
-                        <header>
-                            <h2>Développement</h2>
-                        </header>
-                        <p>
-                            My Little Company propose une gamme de développement sur mesure.....
-                        </p>
-                        <figure>
-                            <img src="./assets/images/code.jpg" alt="Code HTML">
-                            <figcaption>
-                                Blah blah blih blih bluuuuh
-                            </figcaption>
-                        </figure>
-                        <footer>
-                            <a href="development.html" class="btn btn-primary" title="En savoir plus sur notre activité développement">
-                                En savoir plus...
-                            </a>
-                        </footer>
-                    </article>
+            <!-- h1 : heading level 1-->
+            <h1 class="col-12 col-md-10">My Little Company - Société de Services</h1>
 
-                    <article id="integration" class="col-12 col-md-4">
-                        <header>
-                            <h2>Intégration de solutions</h2>
-                        </header>
-                        <p>
-                            My Little Company intègre les solutions du marché dans votre SI
-                        </p>
-                        <figure>
-                            <code>
+            <p class="col-12">
+                <!-- Paragraphe de contenu -->
+                <strong>My Little Company</strong>
+                est une <em>société de services du Numérique</em>, ....
+            </p>
+
+            <!-- Navigation dans nos pages et / ou différentes sections du document courant -->
+            <nav class="col-12">
+                <ul>
+                    <!-- Collection de lignes i.e. conteneur de lignes -->
+                    <li>
+                        <a class="nav-link uppercase hovered" href="#" title="Retour à la page d'accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="nav-link uppercase hovered" href="#development"
+                            title="Développement d'application">Développement</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenu principal d'un document -->
+        <main>
+            <section class="row">
+                <article id="development" class="col-12 col-md-4">
+                    <header>
+                        <h2>Développement</h2>
+                    </header>
+                    <p>
+                        My Little Company propose une gamme de développement sur mesure.....
+                    </p>
+                    <figure>
+                        <img src="./assets/images/code.jpg" alt="Code HTML">
+                        <figcaption>
+                            Blah blah blih blih bluuuuh
+                        </figcaption>
+                    </figure>
+                    <footer>
+                        <a href="development.html" class="btn btn-primary"
+                            title="En savoir plus sur notre activité développement">
+                            En savoir plus...
+                        </a>
+                    </footer>
+                </article>
+
+                <article id="integration" class="col-12 col-md-4">
+                    <header>
+                        <h2>Intégration de solutions</h2>
+                    </header>
+                    <p>
+                        My Little Company intègre les solutions du marché dans votre SI
+                    </p>
+                    <figure>
+                        <code>
                                 &lt;figure&gt;...&lt;/figure&gt;<br>
                                 Utilisée pour illustrer un contenu
                             </code>
-                        </figure>
-                        <footer>
-                            <a href="integration.html" class="btn btn-secondary" title="En savoir plus sur notre activité intégration">
-                                En savoir plus...
-                            </a>
-                        </footer>
-                    </article>
+                    </figure>
+                    <footer>
+                        <a href="integration.html" class="btn btn-secondary"
+                            title="En savoir plus sur notre activité intégration">
+                            En savoir plus...
+                        </a>
+                    </footer>
+                </article>
 
-                    <article id="consulting" class="col-12 col-md-4">
-                        <header>
-                            <h2>Consulting</h2>
-                        </header>
-                        <p>
-                            My Little Company met à votre disposition une armée de consultants en cravate !
-                        </p>
-                        <footer>
-                            <a href="consulting.html" class="btn btn-warning" title="En savoir plus sur notre activité consulting">
-                                En savoir plus...
-                            </a>
-                        </footer>
-                    </article>
+                <article id="consulting" class="col-12 col-md-4">
+                    <header>
+                        <h2>Consulting</h2>
+                    </header>
+                    <p>
+                        My Little Company met à votre disposition une armée de consultants en cravate !
+                    </p>
+                    <footer>
+                        <a href="consulting.html" class="btn btn-warning"
+                            title="En savoir plus sur notre activité consulting">
+                            En savoir plus...
+                        </a>
+                    </footer>
+                </article>
 
-                </section>
-                
-            <template>
-                <aside>
-                    <!-- Formulaire de contact -->
-                    <form method="get" action="" id="contact-form">
-                        <fieldset>
-                            <legend>Qui êtes-vous...</legend>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="lastname-ctrl" placeholder="Votre nom" required>
-                                <div class="bad-control hidden">
-                                    Le champ Nom est obligatoire !
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                    <span class="input-group-text">@</span>
-                                    </div>
-                                    <input type="email" name="email-ctrl" placeholder="Votre email" class="form-control rounded-right" required>
-                                    <div class="bad-control hidden">
-                                        Le champ Email est obligatoire !
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="phone-ctrl" placeholder="Votre téléphone" required>
-                                <div class="bad-control hidden">
-                                    Le champ téléphone est obligatoire !
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="object-ctrl">
-                                    Objet de votre demande :
-                                </label>
-                                <textarea class="form-control" name="object-ctrl" id="object-ctrl"></textarea>
-                            </div>    
-                        </fieldset>
+            </section>
 
-                        <fieldset>
-                            <legend>Un peu plus sur vous...</legend>
-                            
-                            <label for="lead-ctrl">
-                                Comment vous connaissez-nous ?
-                            </label>
-                            <select class="custom-select" name="lead-ctrl" id="lead-ctrl" size="1">
-                                <option value="">Sélectionnez...</option>
-                                <option value="1">Moteur de recherche</option>
-                                <option value="2">Réseaux sociaux</option>
-                                <option value="3">Autre...</option>
-                            </select>
 
-                            <div class="custom-control custom-checkbox">
-                                <label class="custom-control-label"for="subscribe-ctrl">Souscrire à la newsletter</label>
-                                <input class="custom-control-input" type="checkbox" name="subscribe-ctrl" id="subscribe-ctrl">
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-                              </div>
-                            <label>
-                                Vous êtes...
-                            </label>
 
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" name="whoareyou" value="0" id="professional">
-                                <label class="custom-control-label" for="professional"> Professionnel</label>
-                            </div>
 
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" name="whoareyou" value="1" id="individual">
-                                <label class="custom-control-label" for="individual"> Particulier</label>
-                            </div>
+        </main>
 
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" name="whoareyou" value="2" id="both">
-                                <label class="custom-control-label" for="both"> Les deux</label>                           
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subjects-ctrl">
-                                    Vous êtes intéressés par...
-                                </label>
-                                <select class="custom-select" name="subjects-ctrl" multiple size="5">
-                                    <optgroup label="Divers...">
-                                        <option value="0">Tout !</option>
-                                        <option value="1">Rien</option>
-                                    </optgroup>
-                                    
-                                    <optgroup label="Autres...">
-                                        <option value="2">Des trucs</option>
-                                        <option value="3">Autre chose</option> 
-                                    </optgroup>
-
-                                    <optgroup label="Fun...">
-                                        <option value="4">La météo du week-end</option>
-                                        <option value="5">Les vacances</option>
-                                        <option value="6">L'apéro de vendredi</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                        </fieldset>
-                        <button class="btn btn-outline-success" id="btn-success" disabled>
-                            Envoyer
-                        </button>
-                    </form>
-                    <!-- Fin du formulaire de contact -->
-                </aside>
-            </template>
-            </main>
-
-            <footer>
-                <!-- 
+        <footer>
+            <!-- 
                     Mentions Légales : obligatoire
                     Copyright (c)
                     Plan de site
                 -->
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#" title="Mentions L&acute;gales My Little Company">
-                            Mentions Légales
-                        </a>
-                    </li>
-                    <li>
-                        Copyright &copy; 2020
-                    </li>
-                    <li>
-                        <a href="#" title="Plan du site My Little Company">
-                            Plan du site
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.adrar-formation.com/" target="new" title="Lien vers le site officiel de l'ADRAR">
-                            ADRAR
-                        </a>
-                    </li>
-                </ul>
-            </footer>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#" title="Mentions L&acute;gales My Little Company">
+                        Mentions Légales
+                    </a>
+                </li>
+                <li>
+                    Copyright &copy; 2020
+                </li>
+                <li>
+                    <a href="#" title="Plan du site My Little Company">
+                        Plan du site
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.adrar-formation.com/" target="new"
+                        title="Lien vers le site officiel de l'ADRAR">
+                        ADRAR
+                    </a>
+                </li>
+            </ul>
+        </footer>
 
-        </div>
-        <!--Templates : snackbar and other-->
-        <template id="snackbar"><!--tout ce qui est dans cette balise est caché-->
-            <div class="snackbar">
-                Votre message a été envoyé...
+    </div>
+    <!--Modal box template (opacity of the page for the modal box)-->
+    <div class="outer-modal">
+        <div class="inner-modal">
+            <div class="inside-inner">
+            
+                <span aria-hidden="true" class="btn-close">&times;</span>
+        
             </div>
-        </template>
-    </body>
+            <!-- Formulaire de contact -->
+            <form method="get" action="" id="contact-form">
+                <fieldset>
+                    <legend>Qui êtes-vous...</legend>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="lastname-ctrl" placeholder="Votre nom" required>
+                        <div class="bad-control hidden">
+                            Le champ Nom est obligatoire !
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="email" name="email-ctrl" placeholder="Votre email"
+                                class="form-control rounded-right" required>
+                            <div class="bad-control hidden">
+                                Le champ Email est obligatoire !
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="phone-ctrl" placeholder="Votre téléphone"
+                            required>
+                        <div class="bad-control hidden">
+                            Le champ téléphone est obligatoire !
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="object-ctrl">
+                            Objet de votre demande :
+                        </label>
+                        <textarea class="form-control" name="object-ctrl" id="object-ctrl"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Un peu plus sur vous...</legend>
+
+                    <label for="lead-ctrl">
+                        Comment vous connaissez-nous ?
+                    </label>
+                    <select class="custom-select" name="lead-ctrl" id="lead-ctrl" size="1">
+                        <option value="">Sélectionnez...</option>
+                        <option value="1">Moteur de recherche</option>
+                        <option value="2">Réseaux sociaux</option>
+                        <option value="3">Autre...</option>
+                    </select>
+
+                    <div class="custom-control custom-checkbox">
+                        <label class="custom-control-label" for="subscribe-ctrl">Souscrire à la newsletter</label>
+                        <input class="custom-control-input" type="checkbox" name="subscribe-ctrl" id="subscribe-ctrl">
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                    </div>
+                    <label>
+                        Vous êtes...
+                    </label>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" name="whoareyou" value="0" id="professional">
+                        <label class="custom-control-label" for="professional"> Professionnel</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" name="whoareyou" value="1" id="individual">
+                        <label class="custom-control-label" for="individual"> Particulier</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" name="whoareyou" value="2" id="both">
+                        <label class="custom-control-label" for="both"> Les deux</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjects-ctrl">
+                            Vous êtes intéressés par...
+                        </label>
+                        <select class="custom-select" name="subjects-ctrl" multiple size="5">
+                            <optgroup label="Divers...">
+                                <option value="0">Tout !</option>
+                                <option value="1">Rien</option>
+                            </optgroup>
+
+                            <optgroup label="Autres...">
+                                <option value="2">Des trucs</option>
+                                <option value="3">Autre chose</option>
+                            </optgroup>
+
+                            <optgroup label="Fun...">
+                                <option value="4">La météo du week-end</option>
+                                <option value="5">Les vacances</option>
+                                <option value="6">L'apéro de vendredi</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+                <button class="btn btn-outline-success" id="btn-success" disabled>
+                    Envoyer
+                </button>
+            </form>
+            <!-- Fin du formulaire de contact -->
+        </div>
+       
+    </div>
+    <!--Templates : snackbar and other-->
+    <template id="snackbar">
+        <!--tout ce qui est dans cette balise est caché-->
+        <div class="snackbar">
+            Votre message a été envoyé...
+        </div>
+    </template>
+</body>
+
 </html>
