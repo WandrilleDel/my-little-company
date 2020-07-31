@@ -159,7 +159,7 @@
         
             </div>
             <!-- Formulaire de contact -->
-            <form method="get" action="" id="contact-form">
+            <form method="get" action="" class="form-control"id="contact-form">
                 <fieldset>
                     <legend>Qui êtes-vous...</legend>
                     <div class="form-group">
@@ -189,7 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" id="objet-demande">
                         <label for="object-ctrl">
                             Objet de votre demande :
                         </label>
@@ -211,8 +211,8 @@
                     </select>
 
                     <div class="custom-control custom-checkbox">
-                        <label class="custom-control-label" for="subscribe-ctrl">Souscrire à la newsletter</label>
                         <input class="custom-control-input" type="checkbox" name="subscribe-ctrl" id="subscribe-ctrl">
+                        <label class="custom-control-label" for="subscribe-ctrl">Souscrire à la newsletter</label>
                     </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -237,7 +237,7 @@
                         <label class="custom-control-label" for="both"> Les deux</label>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" id="interest">
                         <label for="subjects-ctrl">
                             Vous êtes intéressés par...
                         </label>

@@ -73,7 +73,7 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
         $('form#contact-form').on(
             'submit',
             (event) => {
-                console.log('form was submit')
+                $('.outer-modal').addClass('hidden')//quand on submit, le formulaire dispairait
                 event.preventDefault()//empeche le declenchement de l'evennement par defaut
                 $('#btn-success').attr('disabled', 'disabled');
                 //Récupérer les données du template
@@ -89,18 +89,22 @@ $(document).ready(/**le $ est l'objet jquery et document est document object mod
                     },
                     3000 //3s
                 )
+               $('.form-control, #objet-demande').val('');//supprime les valeur string du formulaire
+               $('#lead-ctrl, #subscribe-ctrl, #customCheck1, #professional, #individual, #both, #interest').prop('checked', false);//supprime les valeur des checkbox une fois le form envoyé
+               
+
             }
         )
       $('.btn-close').on(
         'click',
         (event)=>{
-            $('.outer-modal').addClass('hidden')
+            $('.outer-modal').addClass('hidden')//quand on clique sur la croix, le formulaire se ferme
         }
       )
       $('.btn-question').on(
         'click',
         (event)=>{
-            $('.outer-modal').removeClass('hidden')
+            $('.outer-modal').removeClass('hidden')//quand on clique sur le btn question, le formulaire s'ouvre
         }
       )
     }
